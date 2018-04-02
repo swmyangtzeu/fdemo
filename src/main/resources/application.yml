@@ -1,0 +1,14 @@
+cas:
+  server:
+    host:
+      url: http://localhost:8080/cas-server-webapp-4.0.0
+      login_url: ${cas.server.host.url}/login
+      logout_url: ${cas.server.host.url}/logout?service=${app.server.host.url}
+app:
+  server:
+    host:
+      url: http://localhost:8081
+  login:
+    url: /login
+  logout:
+    url: /logout
